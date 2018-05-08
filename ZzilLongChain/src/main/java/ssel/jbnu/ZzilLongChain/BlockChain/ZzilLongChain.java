@@ -69,6 +69,8 @@ public class ZzilLongChain {
 				System.out.println("WalletB's balance is: " + walletB.getBalance());
 				
 				ziChain.isChainValid();
+				
+				System.out.println("test is going");
 	}
 	
 	

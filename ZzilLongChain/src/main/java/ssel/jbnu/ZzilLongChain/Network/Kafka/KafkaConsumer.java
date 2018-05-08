@@ -37,6 +37,7 @@ public class KafkaConsumer {
 	}
 
 	public void subscribeTopics(List<String> topics) {
+		System.out.println("this is subscribe");
 		consumer.subscribe(topics);
 
 		new Thread(new Runnable() {
@@ -53,6 +54,7 @@ public class KafkaConsumer {
 	int timeouts = 0;
 
 	public void pumpMessages() {
+		System.out.println("this is pumpMessage");
 		ConsumerRecords<String, String> records = consumer.poll(200);
 		if (records.count() == 0)
 		{

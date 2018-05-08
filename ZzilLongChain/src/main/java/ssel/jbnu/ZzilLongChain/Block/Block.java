@@ -47,7 +47,8 @@ public class Block {
 		if((previousHash != "0")) {
 			
 			if((transaction.processTransaction(transaction.signature) != true)) {
-				System.out.println("Transaction failed to process. Discarded.");
+//				System.out.println("Transaction failed to process. Discarded.");
+				System.out.println("Transaction failed.");
 				return false;
 			}
 		}
